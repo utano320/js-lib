@@ -20,7 +20,7 @@ const chatwork = (params) => {
     headers: {
       'X-ChatWorkToken': params['token'],
       'Content-Type': 'application/x-www-form-urlencoded',
-      'Content-Length': data.length
+      'Content-Length': Buffer.byteLength(data)
     }
   };
 
